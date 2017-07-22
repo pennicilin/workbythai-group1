@@ -16,8 +16,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
   <form class="sign-up">
     <h1 class="sign-up-title">Workbythai-group1</h1>
-    <input type="text" class="sign-up-input" placeholder="โปรดระบุตัวเลข" autofocus onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
-    <input type="password" class="sign-up-input" placeholder="โปรดระบุตัวเลข" onkeypress='return event.charCode >= 48 && event.charCode <= 57'>
+	<center>
+    <input type="text" name="num1" style="text-align:right;" class="sign-up-input" placeholder="โปรดระบุตัวเลข" autofocus onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+	<span style="font-weight: bold; font-size: 120%;">&nbsp;&nbsp; ถึง &nbsp;&nbsp;</span>
+    <input type="text" name="num2" style="text-align:right;" class="sign-up-input" placeholder="โปรดระบุตัวเลข" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
+	</center>
     <input type="submit" value="ตกลง" class="sign-up-button">
   </form>
   
