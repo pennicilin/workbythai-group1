@@ -12,6 +12,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<title>Workbythai-group1</title>
   <link rel="stylesheet" href="css/style.css">
   <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+    $("#submit").click(function(){
+        $("#result").show();
+    });
+});
+</script>
+  
 </head>
 <body>
   <form class="sign-up">
@@ -21,9 +31,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	<span style="font-weight: bold; font-size: 120%;">&nbsp;&nbsp; ถึง &nbsp;&nbsp;</span>
     <input type="text" name="num2" style="text-align:right;" class="sign-up-input" placeholder="โปรดระบุตัวเลข" onkeypress='return event.charCode >= 48 && event.charCode <= 57' required>
 	</center>
-    <input type="submit" value="ตกลง" class="sign-up-button">
+    <input type="button" value="ตกลง" id="submit" class="sign-up-button">
   </form>
+  <br><br><br>
+  <div id="result" style="display: none;">
+  <form class="sign-up">
+    <h1 class="sign-up-title">ผลลัพธ์</h1>
+	<center>
+	<span style="font-weight: bold; font-size: 120%;"></span>
+	</center>
+  </form>
+  </div>
   
-
 </body>
 </html>
