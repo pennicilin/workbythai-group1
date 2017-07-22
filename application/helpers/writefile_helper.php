@@ -14,7 +14,7 @@ public function write_log($path="20170722.log",$data=NULL)
 		exit;
 	} else {
 		write_file($path,$data);
-		echo "Path : ".$path." Data : ".$data;
+		print_r("Path : ".$path." Data : ".$data);
 	}
 
 }
