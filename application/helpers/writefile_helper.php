@@ -1,7 +1,7 @@
 <?php
 
 
-public function write_log($path="20170722.log",$data=NULL)
+function write_log($path="20170722.log",$data=NULL)
 {
 	// if( !$data) 
 	// 	echo "No data."; exit;
@@ -13,8 +13,8 @@ public function write_log($path="20170722.log",$data=NULL)
 		echo "No Data.";
 		exit;
 	} else {
-		write_file($path,$data);
-		print_r("Path : ".$path." Data : ".$data);
+		write_file($path,$data,'a+');
+		//print_r("Path : ".$path." Data : ".$data);
 	}
 
 }
